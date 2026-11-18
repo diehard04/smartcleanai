@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "416683894034",
+    "project_id": "smart-clean-ai",
+    "storage_bucket": "smart-clean-ai.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:416683894034:android:3cd726a8eb483660c47fcb",
+        "android_client_info": {
+          "package_name": "com.diehard.smartcleanai"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuOFATGIjzWZG4991icN4gp2jpcKiBrTU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

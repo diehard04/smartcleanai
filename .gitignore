@@ -1,0 +1,15 @@
+﻿@'
+.gradle/
+.idea/
+**/build/
+local.properties
+captures/
+*.iml
+*.apk
+*.aab
+*.hprof
+'@ | Set-Content -Encoding utf8 .gitignore
+
+git rm -r --cached --ignore-unmatch .gradle .idea app/build
+git add .gitignore
+git status
