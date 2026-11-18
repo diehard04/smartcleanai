@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.example.smartcleanai"
+3    package="com.diehard.smartcleanai"
 4    android:versionCode="1"
 5    android:versionName="1.0.0" >
 6
@@ -47,12 +47,12 @@
 27
 28    <permission
 28-->[androidx.core:core:1.12.0] C:\Users\dipak\.gradle\caches\transforms-4\df42635bc4fca60c6d68e75b5645e490\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
-29        android:name="com.example.smartcleanai.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+29        android:name="com.diehard.smartcleanai.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
 29-->[androidx.core:core:1.12.0] C:\Users\dipak\.gradle\caches\transforms-4\df42635bc4fca60c6d68e75b5645e490\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
 30        android:protectionLevel="signature" />
 30-->[androidx.core:core:1.12.0] C:\Users\dipak\.gradle\caches\transforms-4\df42635bc4fca60c6d68e75b5645e490\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
 31
-32    <uses-permission android:name="com.example.smartcleanai.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+32    <uses-permission android:name="com.diehard.smartcleanai.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 32-->[androidx.core:core:1.12.0] C:\Users\dipak\.gradle\caches\transforms-4\df42635bc4fca60c6d68e75b5645e490\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
 32-->[androidx.core:core:1.12.0] C:\Users\dipak\.gradle\caches\transforms-4\df42635bc4fca60c6d68e75b5645e490\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
 33    <uses-permission android:name="android.permission.INTERNET" />
@@ -61,7 +61,7 @@
 34
 35    <application
 35-->D:\AntiGravity\SmartClean\app\src\main\AndroidManifest.xml:19:5-43:19
-36        android:name="com.example.smartcleanai.SmartCleanApplication"
+36        android:name="com.diehard.smartcleanai.SmartCleanApplication"
 36-->D:\AntiGravity\SmartClean\app\src\main\AndroidManifest.xml:20:9-46
 37        android:allowBackup="true"
 37-->D:\AntiGravity\SmartClean\app\src\main\AndroidManifest.xml:21:9-35
@@ -86,7 +86,7 @@
 48-->D:\AntiGravity\SmartClean\app\src\main\AndroidManifest.xml:28:9-50
 49        <activity
 49-->D:\AntiGravity\SmartClean\app\src\main\AndroidManifest.xml:31:9-41:20
-50            android:name="com.example.smartcleanai.MainActivity"
+50            android:name="com.diehard.smartcleanai.MainActivity"
 50-->D:\AntiGravity\SmartClean\app\src\main\AndroidManifest.xml:32:13-41
 51            android:exported="true"
 51-->D:\AntiGravity\SmartClean\app\src\main\AndroidManifest.xml:33:13-36
@@ -146,7 +146,7 @@
 80-->[com.google.mlkit:common:18.11.0] C:\Users\dipak\.gradle\caches\transforms-4\cf5416d8c7b14e6f73a2d572d0588f83\transformed\common-18.11.0\AndroidManifest.xml:9:9-13:38
 81            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
 81-->[com.google.mlkit:common:18.11.0] C:\Users\dipak\.gradle\caches\transforms-4\cf5416d8c7b14e6f73a2d572d0588f83\transformed\common-18.11.0\AndroidManifest.xml:10:13-78
-82            android:authorities="com.example.smartcleanai.mlkitinitprovider"
+82            android:authorities="com.diehard.smartcleanai.mlkitinitprovider"
 82-->[com.google.mlkit:common:18.11.0] C:\Users\dipak\.gradle\caches\transforms-4\cf5416d8c7b14e6f73a2d572d0588f83\transformed\common-18.11.0\AndroidManifest.xml:11:13-69
 83            android:exported="false"
 83-->[com.google.mlkit:common:18.11.0] C:\Users\dipak\.gradle\caches\transforms-4\cf5416d8c7b14e6f73a2d572d0588f83\transformed\common-18.11.0\AndroidManifest.xml:12:13-37
@@ -173,7 +173,7 @@
 95-->[androidx.work:work-runtime:2.9.0] C:\Users\dipak\.gradle\caches\transforms-4\c0dc3f31ddb53da726ccfa8a5e28647f\transformed\work-runtime-2.9.0\AndroidManifest.xml:29:9-37:20
 96            android:name="androidx.startup.InitializationProvider"
 96-->[androidx.work:work-runtime:2.9.0] C:\Users\dipak\.gradle\caches\transforms-4\c0dc3f31ddb53da726ccfa8a5e28647f\transformed\work-runtime-2.9.0\AndroidManifest.xml:30:13-67
-97            android:authorities="com.example.smartcleanai.androidx-startup"
+97            android:authorities="com.diehard.smartcleanai.androidx-startup"
 97-->[androidx.work:work-runtime:2.9.0] C:\Users\dipak\.gradle\caches\transforms-4\c0dc3f31ddb53da726ccfa8a5e28647f\transformed\work-runtime-2.9.0\AndroidManifest.xml:31:13-68
 98            android:exported="false" >
 98-->[androidx.work:work-runtime:2.9.0] C:\Users\dipak\.gradle\caches\transforms-4\c0dc3f31ddb53da726ccfa8a5e28647f\transformed\work-runtime-2.9.0\AndroidManifest.xml:32:13-37

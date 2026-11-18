@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.smartcleanai"
+    namespace = "com.diehard.smartcleanai"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.smartcleanai"
+        applicationId = "com.diehard.smartcleanai"
         minSdk = 26
         targetSdk = 34
         versionCode = 1

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.smartcleanai.app-mergeDebugResources-66:/values/values.xml",
+            "outputFile": "com.diehard.smartcleanai.app-mergeDebugResources-66:/values/values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\dipak\\.gradle\\caches\\transforms-4\\8746094353e8c94856d6803b75d18764\\transformed\\startup-runtime-1.1.1\\res\\values\\values.xml",

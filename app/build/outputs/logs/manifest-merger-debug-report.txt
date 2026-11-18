@@ -203,7 +203,7 @@ MERGED from [com.google.android.odml:image:1.0.0-beta1] C:\Users\dipak\.gradle\c
 		ADDED from D:\AntiGravity\SmartClean\app\src\main\AndroidManifest.xml:22:9-65
 	android:name
 		ADDED from D:\AntiGravity\SmartClean\app\src\main\AndroidManifest.xml:20:9-46
-activity#com.example.smartcleanai.MainActivity
+activity#com.diehard.smartcleanai.MainActivity
 ADDED from D:\AntiGravity\SmartClean\app\src\main\AndroidManifest.xml:31:9-41:20
 	android:label
 		ADDED from D:\AntiGravity\SmartClean\app\src\main\AndroidManifest.xml:34:13-45
@@ -765,7 +765,7 @@ ADDED from [androidx.core:core:1.12.0] C:\Users\dipak\.gradle\caches\transforms-
 		ADDED from [androidx.core:core:1.12.0] C:\Users\dipak\.gradle\caches\transforms-4\df42635bc4fca60c6d68e75b5645e490\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
 	android:name
 		ADDED from [androidx.core:core:1.12.0] C:\Users\dipak\.gradle\caches\transforms-4\df42635bc4fca60c6d68e75b5645e490\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
-permission#com.example.smartcleanai.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+permission#com.diehard.smartcleanai.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.12.0] C:\Users\dipak\.gradle\caches\transforms-4\df42635bc4fca60c6d68e75b5645e490\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
 		ADDED from [androidx.core:core:1.12.0] C:\Users\dipak\.gradle\caches\transforms-4\df42635bc4fca60c6d68e75b5645e490\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
@@ -775,7 +775,7 @@ uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.12.0] C:\Users\dipak\.gradle\caches\transforms-4\df42635bc4fca60c6d68e75b5645e490\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
 	android:name
 		ADDED from [androidx.core:core:1.12.0] C:\Users\dipak\.gradle\caches\transforms-4\df42635bc4fca60c6d68e75b5645e490\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
-uses-permission#com.example.smartcleanai.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+uses-permission#com.diehard.smartcleanai.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.12.0] C:\Users\dipak\.gradle\caches\transforms-4\df42635bc4fca60c6d68e75b5645e490\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
 	android:name
 		ADDED from [androidx.core:core:1.12.0] C:\Users\dipak\.gradle\caches\transforms-4\df42635bc4fca60c6d68e75b5645e490\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
