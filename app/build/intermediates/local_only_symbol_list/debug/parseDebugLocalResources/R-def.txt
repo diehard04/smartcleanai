@@ -1,0 +1,15 @@
+R_DEF: Internal format may change without notice
+local
+color accent
+color background
+color primary
+color primary_dark
+color surface
+drawable ic_launcher_foreground
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string privacy_badge_text
+style Theme.SmartCleanAI
+xml backup_rules
+xml data_extraction_rules
