@@ -24,6 +24,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
+import com.diehard.smartcleanai.ads.AdManager
 import com.diehard.smartcleanai.domain.model.MediaCategory
 import com.diehard.smartcleanai.ui.dashboard.DashboardScreen
 import com.diehard.smartcleanai.ui.navigation.Screen
@@ -54,6 +55,7 @@ class MainActivity : ComponentActivity() {
                     color = BgDark
                 ) {
                     AppNavigation(
+                        activity = this,
                         viewModel = viewModel,
                         startDestination = if (hasStoragePermission) {
                             Screen.Dashboard.route
@@ -87,6 +89,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun AppNavigation(
+    activity: Activity,
     viewModel: MainViewModel,
     startDestination: String
 ) {
@@ -140,6 +143,8 @@ fun AppNavigation(
             DashboardScreen(
                 uiState = uiState,
                 onStartScan = {
+                    // Pre‑load the interstitial before the scan begins
+                    AdManager.preloadInterstitial(context = activity)
                     viewModel.startScan(isIncremental = true)
                     navController.navigate(Screen.Scanning.route)
                 },
@@ -166,9 +171,18 @@ fun AppNavigation(
                     navController.popBackStack()
                 },
                 onScanFinished = {
-                    navController.navigate(Screen.Dashboard.route) {
-                        popUpTo(Screen.Dashboard.route) { inclusive = true }
-                    }
+                    // Show the interstitial (or skip automatically if the user is Pro,
+                    // offline, or the 2‑minute cap is active)
+                    AdManager.showInterstitialAfterScan(
+                        activity = activity,
+                        isProUser = uiState.isProUser,
+                        onComplete = {
+                            // After the ad handling finishes, go back to the dashboard
+                            navController.navigate(Screen.Dashboard.route) {
+                                popUpTo(Screen.Dashboard.route) { inclusive = true }
+                            }
+                        }
+                    )
                 }
             )
         }

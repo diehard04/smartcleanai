@@ -42,6 +42,9 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
+import androidx.compose.ui.platform.LocalContext
+import com.diehard.smartcleanai.ads.AdaptiveBannerAd
+import com.diehard.smartcleanai.ads.AdManager
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
@@ -82,6 +85,11 @@ fun DashboardScreen(
     onNavigateToCategory: (MediaCategory) -> Unit,
     onNavigateToSettings: () -> Unit
 ) {
+    // Required imports added at top
+    // import androidx.compose.runtime.remember
+    // import androidx.compose.ui.platform.LocalContext
+    // import com.diehard.smartcleanai.ads.AdaptiveBannerAd
+    // import com.diehard.smartcleanai.ads.AdManager
     Scaffold(
         topBar = {
             TopAppBar(
@@ -243,9 +251,10 @@ fun DashboardScreen(
             }
 
             // 5. Bottom Section: Adaptive Banner / Privacy Note
-            item(span = { GridItemSpan(2) }) {
-                AdMobBannerPlaceholder()
-            }
+            // Bottom banner placeholder replaced with AdaptiveBannerAd
+    item(span = { GridItemSpan(2) }) {
+        AdaptiveBannerAd(isProUser = uiState.isProUser)
+    }
         }
     }
 }

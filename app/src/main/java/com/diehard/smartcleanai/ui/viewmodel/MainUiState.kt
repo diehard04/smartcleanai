@@ -17,6 +17,7 @@ data class MainUiState(
     val lifetimeBytesSaved: Long = 0L,
     val blurSensitivity: Float = 100.0f,
     val isAutoScanEnabled: Boolean = true,
+    val isProUser: Boolean = false,
     val ignoredItems: List<MediaItemModel> = emptyList(),
     val pendingDeleteIntent: PendingIntent? = null,
     val pendingDeleteIds: List<Long> = emptyList(),

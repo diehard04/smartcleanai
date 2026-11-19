@@ -6,7 +6,11 @@ import coil.ImageLoaderFactory
 import coil.disk.DiskCache
 import coil.memory.MemoryCache
 import coil.request.CachePolicy
+import com.diehard.smartcleanai.ads.AdManager
 import com.diehard.smartcleanai.worker.GalleryScanWorker
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.MobileAds
+import com.google.android.gms.ads.RequestConfiguration
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -15,6 +19,18 @@ class SmartCleanApplication : Application(), ImageLoaderFactory {
 
     override fun onCreate() {
         super.onCreate()
+
+        // Initialize AdMob SDK and register emulator as test device (runs on UI thread)
+        MobileAds.initialize(this) {}
+        val requestConfig = RequestConfiguration.Builder().apply {
+            if (BuildConfig.DEBUG) {
+                setTestDeviceIds(listOf(AdRequest.DEVICE_ID_EMULATOR))
+            }
+        }.build()
+        MobileAds.setRequestConfiguration(requestConfig)
+        // Preload interstitial now
+        AdManager.preloadInterstitial(this)
+
         // Enqueue periodic weekly background auto-scan on background dispatcher so main thread is not blocked
         CoroutineScope(Dispatchers.Default).launch {
             GalleryScanWorker.enqueuePeriodicScan(this@SmartCleanApplication)

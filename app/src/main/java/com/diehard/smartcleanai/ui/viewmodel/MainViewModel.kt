@@ -371,4 +371,8 @@ class MainViewModel(
             GalleryScanWorker.cancelPeriodicScan(getApplication())
         }
     }
+
+    fun setProUser(isPro: Boolean) {
+        _uiState.update { it.copy(isProUser = isPro) }
+    }
 }
