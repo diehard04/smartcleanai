@@ -5,6 +5,9 @@
     <!-- Network Permissions for Google AdMob and Firebase Analytics -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Advertising ID for Google AdMob -->
+    <uses-permission
+        android:name="com.google.android.gms.permission.AD_ID" />
 
     <!-- Android 13+ (API 33+) Granular Media Permissions -->
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
